@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "onBeforeFetch bug test",
+  "version": "0.0.1",
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0"
+    }
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "contextMenus",
+    "contextualIdentities",
+    "history",
+    "idle",
+    "management",
+    "storage",
+    "tabs",
+    "webRequestBlocking",
+    "webRequest"
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "onBeforeFetch"
+  },
+
+  "background": {
+    "page": "js/background/index.html"
+  }
+}
